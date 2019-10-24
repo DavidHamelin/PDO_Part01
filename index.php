@@ -73,7 +73,7 @@ catch (Exception $e)
             <h2>Ex 03</h2>
             <h4>20 premiers clients</h4>
                 <?php
-                $reponseFirstClients = $bdd->query('SELECT * FROM clients LIMIT 20');
+                $reponseFirstClients = $bdd->query('SELECT * FROM clients LIMIT 0, 20');
                 // On affiche chaque entrée une à une
                 while ($donneesFC = $reponseFirstClients->fetch())
                 {
